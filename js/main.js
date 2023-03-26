@@ -76,18 +76,18 @@ function Check_Required(...feilds)
                 }
             }
 
-            if(field.id == 'phoneNo')
-            {
-               const phoneNo_verification =  isValidphoneNo(field);
-               if(phoneNo_verification === true)
-               {
-                Show_Success(field)
-               }
-               else
-               {
-                Show_Error(field, 'Phone no must contain number only')
-               }
-            }
+            // if(field.id == 'phoneNo')
+            // {
+            //    const phoneNo_verification =  isValidphoneNo(field);
+            //    if(phoneNo_verification === true)
+            //    {
+            //     Show_Success(field)
+            //    }
+            //    else
+            //    {
+            //     Show_Error(field, 'Phone no must contain number only')
+            //    }
+            // }
 
             else
             {
@@ -146,18 +146,18 @@ function isValidPassward(passward){
 }
 
 
-function isValidphoneNo(phoneno){
-    // check if PhoneNo is valid using a regular expression
+// function isValidphoneNo(phoneno){
+//     // check if PhoneNo is valid using a regular expression
 
 
-    const phoneNoRegex = /1?[\s-]?\(?(\d{3})\)?[\s-]?\d{3}[\s-]?\d{4}/; 
-    if(phoneNoRegex.test(phoneno.value)) 
-    {
-        return true;
-    }
-    else
-    {
-        return false;
-    }
-}
+//     const phoneNoRegex = /1?[\s-]?\(?(\d{3})\)?[\s-]?\d{3}[\s-]?\d{4}/; 
+//     if(phoneNoRegex.test(phoneno.value)) 
+//     {
+//         return true;
+//     }
+//     else
+//     {
+//         return false;
+//     }
+// }
 
